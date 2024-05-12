@@ -1,0 +1,8 @@
+<h2>product-list works!</h2>
+
+<ul *ngFor="let product of productList">
+    <li>
+        <a (click)="itemSelected(product.id)" href="#">id: {{product.id}} - userId: {{product.userId}} - title: {{product.title}}</a>
+        <div>{{product.body}}</div>
+    </li>
+</ul>
